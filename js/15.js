@@ -1,6 +1,6 @@
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'];
 
-constcarrito = [
+const carrito = [
     {nombre: 'Monitor', precio: 500},
     {nombre: 'Celular', precio:700},
     {nombre: 'Tablet', precio: 300},
