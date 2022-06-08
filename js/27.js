@@ -15,7 +15,7 @@ function Producto(nombre, precio, color, marca) {
 }
 // Crear funciones que solo se utilizan en un objeto en especifico
 Producto.prototype.formatearProducto = function() {
-    return `El Producto ${producto.nombre} tiene un presio de: $ ${producto.precio}`;
+    return `El Producto ${this.nombre} tiene un presio de: $ ${this.precio}`;
 }
 
 function Cliente(nombre, apellido) {
@@ -23,7 +23,7 @@ function Cliente(nombre, apellido) {
     this.apellido = apellido;
 }
 Cliente.prototype.formatearCliente = function() {
-    return `El Cliente ${producto.nombre}$ ${producto.apellido}`;
+    return `El Cliente ${this.nombre}$ ${this.apellido}`;
 }
 
 
@@ -35,11 +35,6 @@ const producto5 = new Producto('Auriculares', 100, 'Blanco', 'SONY');
 const cliente = new Cliente('Juan', 'De la Torre');
 
 console.log(cliente);
-
-function formatearProducto(producto) {
-    return `El Producto ${producto.nombre} tiene un producto de: $ ${producto.precio}`;
-}
-
 
 console.log(producto2);
 console.log(producto3);
